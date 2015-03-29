@@ -11,6 +11,18 @@
 		F3CFA5011AC7F190008B4005 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CFA5001AC7F190008B4005 /* Foundation.framework */; };
 		F3CFA5061AC7F190008B4005 /* ZMDocItemInspector.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA5051AC7F190008B4005 /* ZMDocItemInspector.xcscheme */; };
 		F3CFA5091AC7F190008B4005 /* ZMDocItemInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CFA5081AC7F190008B4005 /* ZMDocItemInspector.m */; };
+		F3CFA5111AC7F3F5008B4005 /* ZMDocItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CFA5101AC7F3F5008B4005 /* ZMDocItemView.m */; };
+		F3CFA5191AC7F47E008B4005 /* JGMethodSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CFA5181AC7F47E008B4005 /* JGMethodSwizzler.m */; };
+		F3CFA5241AC7F48D008B4005 /* class-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA51B1AC7F48D008B4005 /* class-icon.png */; };
+		F3CFA5251AC7F48D008B4005 /* constant-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA51C1AC7F48D008B4005 /* constant-icon.png */; };
+		F3CFA5261AC7F48D008B4005 /* define-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA51D1AC7F48D008B4005 /* define-icon.png */; };
+		F3CFA5271AC7F48D008B4005 /* enum-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA51E1AC7F48D008B4005 /* enum-icon.png */; };
+		F3CFA5281AC7F48D008B4005 /* f-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA51F1AC7F48D008B4005 /* f-icon.png */; };
+		F3CFA5291AC7F48D008B4005 /* function-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA5201AC7F48D008B4005 /* function-icon.png */; };
+		F3CFA52A1AC7F48D008B4005 /* method-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA5211AC7F48D008B4005 /* method-icon.png */; };
+		F3CFA52B1AC7F48D008B4005 /* property-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA5221AC7F48D008B4005 /* property-icon.png */; };
+		F3CFA52C1AC7F48D008B4005 /* variable-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA5231AC7F48D008B4005 /* variable-icon.png */; };
+		F3CFA5311AC7F70A008B4005 /* DTXcodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CFA5301AC7F70A008B4005 /* DTXcodeUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +33,34 @@
 		F3CFA5051AC7F190008B4005 /* ZMDocItemInspector.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = ZMDocItemInspector.xcscheme; path = ZMDocItemInspector.xcodeproj/xcshareddata/xcschemes/ZMDocItemInspector.xcscheme; sourceTree = SOURCE_ROOT; };
 		F3CFA5071AC7F190008B4005 /* ZMDocItemInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMDocItemInspector.h; sourceTree = "<group>"; };
 		F3CFA5081AC7F190008B4005 /* ZMDocItemInspector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMDocItemInspector.m; sourceTree = "<group>"; };
+		F3CFA50F1AC7F3F5008B4005 /* ZMDocItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMDocItemView.h; sourceTree = "<group>"; };
+		F3CFA5101AC7F3F5008B4005 /* ZMDocItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMDocItemView.m; sourceTree = "<group>"; };
+		F3CFA5171AC7F47E008B4005 /* JGMethodSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGMethodSwizzler.h; sourceTree = "<group>"; };
+		F3CFA5181AC7F47E008B4005 /* JGMethodSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGMethodSwizzler.m; sourceTree = "<group>"; };
+		F3CFA51B1AC7F48D008B4005 /* class-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "class-icon.png"; sourceTree = "<group>"; };
+		F3CFA51C1AC7F48D008B4005 /* constant-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "constant-icon.png"; sourceTree = "<group>"; };
+		F3CFA51D1AC7F48D008B4005 /* define-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "define-icon.png"; sourceTree = "<group>"; };
+		F3CFA51E1AC7F48D008B4005 /* enum-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "enum-icon.png"; sourceTree = "<group>"; };
+		F3CFA51F1AC7F48D008B4005 /* f-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f-icon.png"; sourceTree = "<group>"; };
+		F3CFA5201AC7F48D008B4005 /* function-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "function-icon.png"; sourceTree = "<group>"; };
+		F3CFA5211AC7F48D008B4005 /* method-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "method-icon.png"; sourceTree = "<group>"; };
+		F3CFA5221AC7F48D008B4005 /* property-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "property-icon.png"; sourceTree = "<group>"; };
+		F3CFA5231AC7F48D008B4005 /* variable-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "variable-icon.png"; sourceTree = "<group>"; };
+		F3CFA52E1AC7F70A008B4005 /* DTXcodeHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTXcodeHeaders.h; sourceTree = "<group>"; };
+		F3CFA52F1AC7F70A008B4005 /* DTXcodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTXcodeUtils.h; sourceTree = "<group>"; };
+		F3CFA5301AC7F70A008B4005 /* DTXcodeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTXcodeUtils.m; sourceTree = "<group>"; };
+		F3CFA5341AC7F961008B4005 /* DVTControllerContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTControllerContentView.h; sourceTree = "<group>"; };
+		F3CFA5351AC7F961008B4005 /* DVTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTExtension.h; sourceTree = "<group>"; };
+		F3CFA5361AC7F961008B4005 /* DVTLayoutView_ML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLayoutView_ML.h; sourceTree = "<group>"; };
+		F3CFA5381AC7F961008B4005 /* DVTDocumentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDocumentLocation.h; sourceTree = "<group>"; };
+		F3CFA5391AC7F961008B4005 /* DVTSourceLandmarkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceLandmarkItem.h; sourceTree = "<group>"; };
+		F3CFA53A1AC7F961008B4005 /* DVTTextDocumentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextDocumentLocation.h; sourceTree = "<group>"; };
+		F3CFA53B1AC7F961008B4005 /* IDEEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEEditor.h; sourceTree = "<group>"; };
+		F3CFA53C1AC7F961008B4005 /* IDESourceCodeEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodeEditor.h; sourceTree = "<group>"; };
+		F3CFA53D1AC7F9A6008B4005 /* IDEEditorDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEEditorDocument.h; sourceTree = "<group>"; };
+		F3CFA53E1AC7F9A6008B4005 /* IDESourceCodeDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDESourceCodeDocument.h; sourceTree = "<group>"; };
+		F3CFA53F1AC7F9FE008B4005 /* IDEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEViewController.h; sourceTree = "<group>"; };
+		F3CFA5401AC7FA0F008B4005 /* DVTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +107,8 @@
 			children = (
 				F3CFA5071AC7F190008B4005 /* ZMDocItemInspector.h */,
 				F3CFA5081AC7F190008B4005 /* ZMDocItemInspector.m */,
+				F3CFA50F1AC7F3F5008B4005 /* ZMDocItemView.h */,
+				F3CFA5101AC7F3F5008B4005 /* ZMDocItemView.m */,
 				F3CFA5031AC7F190008B4005 /* Supporting Files */,
 			);
 			path = ZMDocItemInspector;
@@ -75,10 +117,84 @@
 		F3CFA5031AC7F190008B4005 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F3CFA5161AC7F47E008B4005 /* JGMethodSwizzle */,
+				F3CFA52D1AC7F70A008B4005 /* DTXcodeUtils */,
+				F3CFA5321AC7F961008B4005 /* XcodeHeaders */,
+				F3CFA51A1AC7F48D008B4005 /* icons */,
 				F3CFA5041AC7F190008B4005 /* Info.plist */,
 				F3CFA5051AC7F190008B4005 /* ZMDocItemInspector.xcscheme */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3CFA5161AC7F47E008B4005 /* JGMethodSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFA5171AC7F47E008B4005 /* JGMethodSwizzler.h */,
+				F3CFA5181AC7F47E008B4005 /* JGMethodSwizzler.m */,
+			);
+			path = JGMethodSwizzle;
+			sourceTree = "<group>";
+		};
+		F3CFA51A1AC7F48D008B4005 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFA51B1AC7F48D008B4005 /* class-icon.png */,
+				F3CFA51C1AC7F48D008B4005 /* constant-icon.png */,
+				F3CFA51D1AC7F48D008B4005 /* define-icon.png */,
+				F3CFA51E1AC7F48D008B4005 /* enum-icon.png */,
+				F3CFA51F1AC7F48D008B4005 /* f-icon.png */,
+				F3CFA5201AC7F48D008B4005 /* function-icon.png */,
+				F3CFA5211AC7F48D008B4005 /* method-icon.png */,
+				F3CFA5221AC7F48D008B4005 /* property-icon.png */,
+				F3CFA5231AC7F48D008B4005 /* variable-icon.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		F3CFA52D1AC7F70A008B4005 /* DTXcodeUtils */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFA52E1AC7F70A008B4005 /* DTXcodeHeaders.h */,
+				F3CFA52F1AC7F70A008B4005 /* DTXcodeUtils.h */,
+				F3CFA5301AC7F70A008B4005 /* DTXcodeUtils.m */,
+			);
+			path = DTXcodeUtils;
+			sourceTree = "<group>";
+		};
+		F3CFA5321AC7F961008B4005 /* XcodeHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFA5331AC7F961008B4005 /* PanelHeaders */,
+				F3CFA5371AC7F961008B4005 /* SourceCodeHeaders */,
+			);
+			path = XcodeHeaders;
+			sourceTree = "<group>";
+		};
+		F3CFA5331AC7F961008B4005 /* PanelHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFA5341AC7F961008B4005 /* DVTControllerContentView.h */,
+				F3CFA5351AC7F961008B4005 /* DVTExtension.h */,
+				F3CFA5361AC7F961008B4005 /* DVTLayoutView_ML.h */,
+			);
+			path = PanelHeaders;
+			sourceTree = "<group>";
+		};
+		F3CFA5371AC7F961008B4005 /* SourceCodeHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFA53D1AC7F9A6008B4005 /* IDEEditorDocument.h */,
+				F3CFA53E1AC7F9A6008B4005 /* IDESourceCodeDocument.h */,
+				F3CFA5381AC7F961008B4005 /* DVTDocumentLocation.h */,
+				F3CFA5391AC7F961008B4005 /* DVTSourceLandmarkItem.h */,
+				F3CFA53A1AC7F961008B4005 /* DVTTextDocumentLocation.h */,
+				F3CFA5401AC7FA0F008B4005 /* DVTViewController.h */,
+				F3CFA53F1AC7F9FE008B4005 /* IDEViewController.h */,
+				F3CFA53B1AC7F961008B4005 /* IDEEditor.h */,
+				F3CFA53C1AC7F961008B4005 /* IDESourceCodeEditor.h */,
+			);
+			path = SourceCodeHeaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +254,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3CFA5061AC7F190008B4005 /* ZMDocItemInspector.xcscheme in Resources */,
+				F3CFA52A1AC7F48D008B4005 /* method-icon.png in Resources */,
+				F3CFA5281AC7F48D008B4005 /* f-icon.png in Resources */,
+				F3CFA5241AC7F48D008B4005 /* class-icon.png in Resources */,
+				F3CFA5251AC7F48D008B4005 /* constant-icon.png in Resources */,
+				F3CFA5261AC7F48D008B4005 /* define-icon.png in Resources */,
+				F3CFA52C1AC7F48D008B4005 /* variable-icon.png in Resources */,
+				F3CFA52B1AC7F48D008B4005 /* property-icon.png in Resources */,
+				F3CFA5291AC7F48D008B4005 /* function-icon.png in Resources */,
+				F3CFA5271AC7F48D008B4005 /* enum-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CFA5111AC7F3F5008B4005 /* ZMDocItemView.m in Sources */,
+				F3CFA5311AC7F70A008B4005 /* DTXcodeUtils.m in Sources */,
+				F3CFA5191AC7F47E008B4005 /* JGMethodSwizzler.m in Sources */,
 				F3CFA5091AC7F190008B4005 /* ZMDocItemInspector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
