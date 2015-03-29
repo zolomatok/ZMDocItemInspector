@@ -59,11 +59,11 @@
     return self;
 }
 
-- (void)drawRect:(NSRect)dirtyRect {
-    [super drawRect:dirtyRect];
-    
-    // Drawing code here.
-}
+//- (void)drawRect:(NSRect)dirtyRect {
+//    [super drawRect:dirtyRect];
+//    
+//    // Drawing code here.
+//}
 
 
 -(void)mouseEntered:(NSEvent *)theEvent {
@@ -71,38 +71,30 @@
         self.nameView.textColor = [NSColor whiteColor];
         self.layer.backgroundColor = [[NSColor colorWithRed:0 green:108/255.f blue:210/255.f alpha:1] CGColor];
     }
+    [self.delegate itemDidReceiveMouseEnter:self];
 }
 
 -(void)mouseExited:(NSEvent *)theEvent {
+    [self resetItemAppearance];
+    [self.delegate itemDidReceiveMouseExit:self];
+}
+
+
+- (void)resetItemAppearance {
     self.nameView.textColor = [NSColor blackColor];
     self.layer.backgroundColor = [[NSColor clearColor] CGColor];
 }
+
 
 - (void)mouseUp:(NSEvent *)theEvent {
     [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
         context.duration = 0.05;
         self.animator.alphaValue = 0;
-//        self.layer.backgroundColor = [[NSColor clearColor] CGColor];
     } completionHandler:^{
         [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
             context.duration = 0.05;
             self.animator.alphaValue = 1;
-//            self.layer.backgroundColor = [[NSColor colorWithRed:0 green:108/255.f blue:210/255.f alpha:1] CGColor];
-        } completionHandler:^{
-//            [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-//                context.duration = 0.05;
-//                self.animator.alphaValue = 0;
-//
-////                self.layer.backgroundColor = [[NSColor clearColor] CGColor];
-//            } completionHandler:^{
-//                [NSAnimationContext runAnimationGroup:^(NSAnimationContext *context) {
-//                    context.duration = 0.05;
-//                    self.animator.alphaValue = 1;
-//
-////                    self.layer.backgroundColor = [[NSColor colorWithRed:0 green:108/255.f blue:210/255.f alpha:1] CGColor];
-//                } completionHandler:nil];
-//            }];
-        }];
+        } completionHandler:nil];
     }];
     [self.delegate itemViewDidReceiveClick:self];
 }

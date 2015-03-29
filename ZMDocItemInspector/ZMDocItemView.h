@@ -11,6 +11,8 @@
 @class ZMDocItemView;
 @protocol DocItemViewDelegate <NSObject>
 - (void)itemViewDidReceiveClick:(ZMDocItemView *)itemView;
+- (void)itemDidReceiveMouseEnter:(ZMDocItemView *)itemView;
+- (void)itemDidReceiveMouseExit:(ZMDocItemView *)itemView;
 @end
 
 @interface ZMDocItemView : NSView
@@ -18,4 +20,5 @@
 
 @property int customTag;
 @property (weak) id <DocItemViewDelegate> delegate;
+- (void)resetItemAppearance;
 @end

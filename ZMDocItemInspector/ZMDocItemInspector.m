@@ -8,6 +8,7 @@
 
 #import "ZMDocItemInspector.h"
 #import "ZMDocItemView.h"
+#import "NSTaggableView.h"
 
 // Utils
 #import "JGMethodSwizzler.h"
@@ -26,8 +27,9 @@ static ZMDocItemInspector *sharedPlugin;
 
 @interface ZMDocItemInspector() <DocItemViewDelegate>
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
-@property (nonatomic, strong) NSView *containerView;
+@property (nonatomic, strong) NSTaggableView *containerView;
 @property NSArray *currentDocItems;
+@property NSMutableArray *itemsUnderMouse;
 @end
 
 
@@ -108,10 +110,10 @@ static ZMDocItemInspector *sharedPlugin;
             if ([((DVTExtension *)slice).name isEqualToString:@"QuickHelpInspectorMain"]) {
                 
                 // Create the container
-                sharedPlugin.containerView = [[NSView alloc] initWithFrame:CGRectMake(0, 0, orig.frame.size.width, 400)];
+                sharedPlugin.containerView = [[NSTaggableView alloc] initWithFrame:CGRectMake(0, 0, orig.frame.size.width, 400)];
                 [sharedPlugin.containerView setWantsLayer:YES];
                 [sharedPlugin.containerView.layer setBackgroundColor:[[NSColor clearColor] CGColor]];
-                
+                sharedPlugin.containerView.mTag = @998;
                 
                 // Update the items
                 [sharedPlugin updateDocItems];
@@ -119,6 +121,11 @@ static ZMDocItemInspector *sharedPlugin;
                 
                 // Push the container
                 [orig setContentView:sharedPlugin.containerView];
+                
+                
+                // Listen for scroll events
+                [[NSNotificationCenter defaultCenter] addObserver:sharedPlugin selector:@selector(boundsDidChange:) name:NSViewBoundsDidChangeNotification object:orig.superview];
+                [orig setPostsBoundsChangedNotifications:YES];
             }
             
             
@@ -126,6 +133,15 @@ static ZMDocItemInspector *sharedPlugin;
         };
     }];
 #pragma clang diagnostic pop
+}
+
+
+- (void)boundsDidChange:(NSNotification *)notif {
+    
+    // Deselect items on scroll (else if the scrolling was done with a gesture or mouse wheel, items with be stuck with a blue background)
+    for (ZMDocItemView *itemView in sharedPlugin.itemsUnderMouse) {
+        [itemView resetItemAppearance];
+    }
 }
 
 
@@ -191,6 +207,7 @@ static ZMDocItemInspector *sharedPlugin;
     
     // Remove the previous views
     [sharedPlugin.containerView setSubviews:[NSArray array]];
+    [sharedPlugin.itemsUnderMouse removeAllObjects];
     
     
     // Calculate and set the height of the container view
@@ -265,6 +282,21 @@ static ZMDocItemInspector *sharedPlugin;
 
 - (void)itemViewDidReceiveClick:(ZMDocItemView *)itemView {
     [self jumpToLandmarkItemInTheEditor:self.currentDocItems[itemView.customTag]];
+}
+
+
+- (void)itemDidReceiveMouseEnter:(ZMDocItemView *)itemView {
+    if (!sharedPlugin.itemsUnderMouse) {
+        sharedPlugin.itemsUnderMouse = [NSMutableArray array];
+    }
+    
+    if (![sharedPlugin.itemsUnderMouse containsObject:itemView]) {
+        [sharedPlugin.itemsUnderMouse addObject:itemView];
+    }
+}
+
+- (void)itemDidReceiveMouseExit:(ZMDocItemView *)itemView {
+    [sharedPlugin.itemsUnderMouse removeObject:itemView];
 }
 
 

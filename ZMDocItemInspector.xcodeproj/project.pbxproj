@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F34F06861AC801CE009731FB /* NSTaggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F34F06851AC801CE009731FB /* NSTaggableView.m */; };
 		F3CFA4FF1AC7F190008B4005 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CFA4FE1AC7F190008B4005 /* AppKit.framework */; };
 		F3CFA5011AC7F190008B4005 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CFA5001AC7F190008B4005 /* Foundation.framework */; };
 		F3CFA5061AC7F190008B4005 /* ZMDocItemInspector.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA5051AC7F190008B4005 /* ZMDocItemInspector.xcscheme */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F34F06841AC801CE009731FB /* NSTaggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTaggableView.h; sourceTree = "<group>"; };
+		F34F06851AC801CE009731FB /* NSTaggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTaggableView.m; sourceTree = "<group>"; };
 		F3CFA4FB1AC7F190008B4005 /* ZMDocItemInspector.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMDocItemInspector.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CFA4FE1AC7F190008B4005 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		F3CFA5001AC7F190008B4005 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -109,6 +112,8 @@
 				F3CFA5081AC7F190008B4005 /* ZMDocItemInspector.m */,
 				F3CFA50F1AC7F3F5008B4005 /* ZMDocItemView.h */,
 				F3CFA5101AC7F3F5008B4005 /* ZMDocItemView.m */,
+				F34F06841AC801CE009731FB /* NSTaggableView.h */,
+				F34F06851AC801CE009731FB /* NSTaggableView.m */,
 				F3CFA5031AC7F190008B4005 /* Supporting Files */,
 			);
 			path = ZMDocItemInspector;
@@ -276,6 +281,7 @@
 				F3CFA5111AC7F3F5008B4005 /* ZMDocItemView.m in Sources */,
 				F3CFA5311AC7F70A008B4005 /* DTXcodeUtils.m in Sources */,
 				F3CFA5191AC7F47E008B4005 /* JGMethodSwizzler.m in Sources */,
+				F34F06861AC801CE009731FB /* NSTaggableView.m in Sources */,
 				F3CFA5091AC7F190008B4005 /* ZMDocItemInspector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +405,7 @@
 				F3CFA50E1AC7F190008B4005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
