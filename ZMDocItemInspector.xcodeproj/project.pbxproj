@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3CFA4FF1AC7F190008B4005 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CFA4FE1AC7F190008B4005 /* AppKit.framework */; };
+		F3CFA5011AC7F190008B4005 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CFA5001AC7F190008B4005 /* Foundation.framework */; };
+		F3CFA5061AC7F190008B4005 /* ZMDocItemInspector.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA5051AC7F190008B4005 /* ZMDocItemInspector.xcscheme */; };
+		F3CFA5091AC7F190008B4005 /* ZMDocItemInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CFA5081AC7F190008B4005 /* ZMDocItemInspector.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F3CFA4FB1AC7F190008B4005 /* ZMDocItemInspector.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMDocItemInspector.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CFA4FE1AC7F190008B4005 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		F3CFA5001AC7F190008B4005 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		F3CFA5041AC7F190008B4005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3CFA5051AC7F190008B4005 /* ZMDocItemInspector.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = ZMDocItemInspector.xcscheme; path = ZMDocItemInspector.xcodeproj/xcshareddata/xcschemes/ZMDocItemInspector.xcscheme; sourceTree = SOURCE_ROOT; };
+		F3CFA5071AC7F190008B4005 /* ZMDocItemInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMDocItemInspector.h; sourceTree = "<group>"; };
+		F3CFA5081AC7F190008B4005 /* ZMDocItemInspector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMDocItemInspector.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3CFA4F91AC7F190008B4005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CFA4FF1AC7F190008B4005 /* AppKit.framework in Frameworks */,
+				F3CFA5011AC7F190008B4005 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3CFA4F21AC7F190008B4005 = {
+			isa = PBXGroup;
+			children = (
+				F3CFA5021AC7F190008B4005 /* ZMDocItemInspector */,
+				F3CFA4FD1AC7F190008B4005 /* Frameworks */,
+				F3CFA4FC1AC7F190008B4005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3CFA4FC1AC7F190008B4005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFA4FB1AC7F190008B4005 /* ZMDocItemInspector.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3CFA4FD1AC7F190008B4005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFA4FE1AC7F190008B4005 /* AppKit.framework */,
+				F3CFA5001AC7F190008B4005 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3CFA5021AC7F190008B4005 /* ZMDocItemInspector */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFA5071AC7F190008B4005 /* ZMDocItemInspector.h */,
+				F3CFA5081AC7F190008B4005 /* ZMDocItemInspector.m */,
+				F3CFA5031AC7F190008B4005 /* Supporting Files */,
+			);
+			path = ZMDocItemInspector;
+			sourceTree = "<group>";
+		};
+		F3CFA5031AC7F190008B4005 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3CFA5041AC7F190008B4005 /* Info.plist */,
+				F3CFA5051AC7F190008B4005 /* ZMDocItemInspector.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3CFA4FA1AC7F190008B4005 /* ZMDocItemInspector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3CFA50C1AC7F190008B4005 /* Build configuration list for PBXNativeTarget "ZMDocItemInspector" */;
+			buildPhases = (
+				F3CFA4F71AC7F190008B4005 /* Sources */,
+				F3CFA4F81AC7F190008B4005 /* Resources */,
+				F3CFA4F91AC7F190008B4005 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZMDocItemInspector;
+			productName = ZMDocItemInspector;
+			productReference = F3CFA4FB1AC7F190008B4005 /* ZMDocItemInspector.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3CFA4F31AC7F190008B4005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Zolo;
+				TargetAttributes = {
+					F3CFA4FA1AC7F190008B4005 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = F3CFA4F61AC7F190008B4005 /* Build configuration list for PBXProject "ZMDocItemInspector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3CFA4F21AC7F190008B4005;
+			productRefGroup = F3CFA4FC1AC7F190008B4005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3CFA4FA1AC7F190008B4005 /* ZMDocItemInspector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3CFA4F81AC7F190008B4005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CFA5061AC7F190008B4005 /* ZMDocItemInspector.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3CFA4F71AC7F190008B4005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CFA5091AC7F190008B4005 /* ZMDocItemInspector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3CFA50A1AC7F190008B4005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		F3CFA50B1AC7F190008B4005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		F3CFA50D1AC7F190008B4005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = ZMDocItemInspector/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		F3CFA50E1AC7F190008B4005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = ZMDocItemInspector/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3CFA4F61AC7F190008B4005 /* Build configuration list for PBXProject "ZMDocItemInspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CFA50A1AC7F190008B4005 /* Debug */,
+				F3CFA50B1AC7F190008B4005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3CFA50C1AC7F190008B4005 /* Build configuration list for PBXNativeTarget "ZMDocItemInspector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CFA50D1AC7F190008B4005 /* Debug */,
+				F3CFA50E1AC7F190008B4005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3CFA4F31AC7F190008B4005 /* Project object */;
+}
