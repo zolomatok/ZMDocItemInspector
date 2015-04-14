@@ -59,12 +59,6 @@
     return self;
 }
 
-//- (void)drawRect:(NSRect)dirtyRect {
-//    [super drawRect:dirtyRect];
-//    
-//    // Drawing code here.
-//}
-
 
 -(void)mouseEntered:(NSEvent *)theEvent {
     if (self.iconImageView) {
@@ -99,8 +93,8 @@
     [self.delegate itemViewDidReceiveClick:self];
 }
 
--(void)updateTrackingAreas
-{
+
+-(void)updateTrackingAreas {
     if(self.areaTrekker != nil) {
         [self removeTrackingArea:self.areaTrekker];
     }

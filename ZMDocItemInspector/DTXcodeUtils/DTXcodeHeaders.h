@@ -37,15 +37,17 @@
 @property(retain, nonatomic) IDEEditorArea *editorArea;
 @end
 
-//@interface IDEEditorDocument : NSDocument
-//@end
-//
-//@interface IDESourceCodeDocument : IDEEditorDocument
-//@end
+@interface IDEEditorDocument : NSDocument
+@end
+
+@interface IDESourceCodeDocument : IDEEditorDocument
+- (NSArray *)ideTopLevelStructureObjects;
+@end
 
 @interface IDESourceCodeEditor : IDEEditor
 @property(readonly) IDESourceCodeDocument *sourceCodeDocument;
 @property(retain) DVTSourceTextView *textView;
+- (void)selectDocumentLocations:(id)locations highlightSelection:(BOOL)highlightSelection;
 @end
 
 @interface IDEComparisonEditor : IDEEditor

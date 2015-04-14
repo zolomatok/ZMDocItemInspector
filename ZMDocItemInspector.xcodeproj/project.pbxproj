@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F34F06861AC801CE009731FB /* NSTaggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F34F06851AC801CE009731FB /* NSTaggableView.m */; };
+		F3C3289E1ADDB7ED008B41BD /* NSTaggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C3289D1ADDB7ED008B41BD /* NSTaggableView.m */; };
 		F3CFA4FF1AC7F190008B4005 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CFA4FE1AC7F190008B4005 /* AppKit.framework */; };
 		F3CFA5011AC7F190008B4005 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CFA5001AC7F190008B4005 /* Foundation.framework */; };
 		F3CFA5061AC7F190008B4005 /* ZMDocItemInspector.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = F3CFA5051AC7F190008B4005 /* ZMDocItemInspector.xcscheme */; };
@@ -27,8 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F34F06841AC801CE009731FB /* NSTaggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTaggableView.h; sourceTree = "<group>"; };
-		F34F06851AC801CE009731FB /* NSTaggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTaggableView.m; sourceTree = "<group>"; };
+		F32461451ADDB9090049B3B1 /* DVTControllerContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTControllerContentView.h; sourceTree = "<group>"; };
+		F32461461ADDB9090049B3B1 /* DVTDocumentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDocumentLocation.h; sourceTree = "<group>"; };
+		F32461471ADDB9090049B3B1 /* DVTLayoutView_ML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLayoutView_ML.h; sourceTree = "<group>"; };
+		F32461481ADDB9090049B3B1 /* DVTSourceLandmarkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceLandmarkItem.h; sourceTree = "<group>"; };
+		F32461491ADDB9090049B3B1 /* DVTTextDocumentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextDocumentLocation.h; sourceTree = "<group>"; };
+		F3C3289C1ADDB7ED008B41BD /* NSTaggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTaggableView.h; sourceTree = "<group>"; };
+		F3C3289D1ADDB7ED008B41BD /* NSTaggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTaggableView.m; sourceTree = "<group>"; };
 		F3CFA4FB1AC7F190008B4005 /* ZMDocItemInspector.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMDocItemInspector.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CFA4FE1AC7F190008B4005 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		F3CFA5001AC7F190008B4005 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -52,18 +57,6 @@
 		F3CFA52E1AC7F70A008B4005 /* DTXcodeHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTXcodeHeaders.h; sourceTree = "<group>"; };
 		F3CFA52F1AC7F70A008B4005 /* DTXcodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTXcodeUtils.h; sourceTree = "<group>"; };
 		F3CFA5301AC7F70A008B4005 /* DTXcodeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTXcodeUtils.m; sourceTree = "<group>"; };
-		F3CFA5341AC7F961008B4005 /* DVTControllerContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTControllerContentView.h; sourceTree = "<group>"; };
-		F3CFA5351AC7F961008B4005 /* DVTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTExtension.h; sourceTree = "<group>"; };
-		F3CFA5361AC7F961008B4005 /* DVTLayoutView_ML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLayoutView_ML.h; sourceTree = "<group>"; };
-		F3CFA5381AC7F961008B4005 /* DVTDocumentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDocumentLocation.h; sourceTree = "<group>"; };
-		F3CFA5391AC7F961008B4005 /* DVTSourceLandmarkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceLandmarkItem.h; sourceTree = "<group>"; };
-		F3CFA53A1AC7F961008B4005 /* DVTTextDocumentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextDocumentLocation.h; sourceTree = "<group>"; };
-		F3CFA53B1AC7F961008B4005 /* IDEEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEEditor.h; sourceTree = "<group>"; };
-		F3CFA53C1AC7F961008B4005 /* IDESourceCodeEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodeEditor.h; sourceTree = "<group>"; };
-		F3CFA53D1AC7F9A6008B4005 /* IDEEditorDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEEditorDocument.h; sourceTree = "<group>"; };
-		F3CFA53E1AC7F9A6008B4005 /* IDESourceCodeDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDESourceCodeDocument.h; sourceTree = "<group>"; };
-		F3CFA53F1AC7F9FE008B4005 /* IDEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEViewController.h; sourceTree = "<group>"; };
-		F3CFA5401AC7FA0F008B4005 /* DVTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +72,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F32461441ADDB9090049B3B1 /* XcodeHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				F32461451ADDB9090049B3B1 /* DVTControllerContentView.h */,
+				F32461461ADDB9090049B3B1 /* DVTDocumentLocation.h */,
+				F32461471ADDB9090049B3B1 /* DVTLayoutView_ML.h */,
+				F32461481ADDB9090049B3B1 /* DVTSourceLandmarkItem.h */,
+				F32461491ADDB9090049B3B1 /* DVTTextDocumentLocation.h */,
+			);
+			path = XcodeHeaders;
+			sourceTree = "<group>";
+		};
 		F3CFA4F21AC7F190008B4005 = {
 			isa = PBXGroup;
 			children = (
@@ -112,8 +117,8 @@
 				F3CFA5081AC7F190008B4005 /* ZMDocItemInspector.m */,
 				F3CFA50F1AC7F3F5008B4005 /* ZMDocItemView.h */,
 				F3CFA5101AC7F3F5008B4005 /* ZMDocItemView.m */,
-				F34F06841AC801CE009731FB /* NSTaggableView.h */,
-				F34F06851AC801CE009731FB /* NSTaggableView.m */,
+				F3C3289C1ADDB7ED008B41BD /* NSTaggableView.h */,
+				F3C3289D1ADDB7ED008B41BD /* NSTaggableView.m */,
 				F3CFA5031AC7F190008B4005 /* Supporting Files */,
 			);
 			path = ZMDocItemInspector;
@@ -124,7 +129,7 @@
 			children = (
 				F3CFA5161AC7F47E008B4005 /* JGMethodSwizzle */,
 				F3CFA52D1AC7F70A008B4005 /* DTXcodeUtils */,
-				F3CFA5321AC7F961008B4005 /* XcodeHeaders */,
+				F32461441ADDB9090049B3B1 /* XcodeHeaders */,
 				F3CFA51A1AC7F48D008B4005 /* icons */,
 				F3CFA5041AC7F190008B4005 /* Info.plist */,
 				F3CFA5051AC7F190008B4005 /* ZMDocItemInspector.xcscheme */,
@@ -165,41 +170,6 @@
 				F3CFA5301AC7F70A008B4005 /* DTXcodeUtils.m */,
 			);
 			path = DTXcodeUtils;
-			sourceTree = "<group>";
-		};
-		F3CFA5321AC7F961008B4005 /* XcodeHeaders */ = {
-			isa = PBXGroup;
-			children = (
-				F3CFA5331AC7F961008B4005 /* PanelHeaders */,
-				F3CFA5371AC7F961008B4005 /* SourceCodeHeaders */,
-			);
-			path = XcodeHeaders;
-			sourceTree = "<group>";
-		};
-		F3CFA5331AC7F961008B4005 /* PanelHeaders */ = {
-			isa = PBXGroup;
-			children = (
-				F3CFA5341AC7F961008B4005 /* DVTControllerContentView.h */,
-				F3CFA5351AC7F961008B4005 /* DVTExtension.h */,
-				F3CFA5361AC7F961008B4005 /* DVTLayoutView_ML.h */,
-			);
-			path = PanelHeaders;
-			sourceTree = "<group>";
-		};
-		F3CFA5371AC7F961008B4005 /* SourceCodeHeaders */ = {
-			isa = PBXGroup;
-			children = (
-				F3CFA53D1AC7F9A6008B4005 /* IDEEditorDocument.h */,
-				F3CFA53E1AC7F9A6008B4005 /* IDESourceCodeDocument.h */,
-				F3CFA5381AC7F961008B4005 /* DVTDocumentLocation.h */,
-				F3CFA5391AC7F961008B4005 /* DVTSourceLandmarkItem.h */,
-				F3CFA53A1AC7F961008B4005 /* DVTTextDocumentLocation.h */,
-				F3CFA5401AC7FA0F008B4005 /* DVTViewController.h */,
-				F3CFA53F1AC7F9FE008B4005 /* IDEViewController.h */,
-				F3CFA53B1AC7F961008B4005 /* IDEEditor.h */,
-				F3CFA53C1AC7F961008B4005 /* IDESourceCodeEditor.h */,
-			);
-			path = SourceCodeHeaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +251,7 @@
 				F3CFA5111AC7F3F5008B4005 /* ZMDocItemView.m in Sources */,
 				F3CFA5311AC7F70A008B4005 /* DTXcodeUtils.m in Sources */,
 				F3CFA5191AC7F47E008B4005 /* JGMethodSwizzler.m in Sources */,
-				F34F06861AC801CE009731FB /* NSTaggableView.m in Sources */,
+				F3C3289E1ADDB7ED008B41BD /* NSTaggableView.m in Sources */,
 				F3CFA5091AC7F190008B4005 /* ZMDocItemInspector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

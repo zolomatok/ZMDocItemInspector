@@ -15,12 +15,10 @@
 #import "DTXcodeUtils.h"
 
 // Panel UI
-#import "DVTExtension.h"
 #import "DVTControllerContentView.h"
 
 // Source code
 #import "DVTSourceLandmarkItem.h"
-#import "IDESourceCodeEditor.h"
 #import "DVTTextDocumentLocation.h"
 
 static ZMDocItemInspector *sharedPlugin;
@@ -77,12 +75,6 @@ static ZMDocItemInspector *sharedPlugin;
 #pragma mark - Notification listener
 - (void)notificationListener:(NSNotification *)notif {
     
-    // Cursor position changed
-    if ([notif.name isEqualToString:@"IDESourceCodeEditorDidChangeLineSelectionNotification"]) {
-        NSLog(@"[DOCI] Cursor position változott");
-    }
-    
-    
     // Save (did) || Setup complete (changed files)
     if ([notif.name isEqualToString:@"IDEEditorDocumentDidSaveNotification"] || [notif.name isEqualToString:@"IDESourceCodeEditorDidFinishSetup"]) {
         NSLog(@"[DOCI] Did save");
@@ -107,7 +99,7 @@ static ZMDocItemInspector *sharedPlugin;
             
             
             DVTControllerContentView *orig = JGOriginalImplementation(DVTControllerContentView *, slice, category);
-            if ([((DVTExtension *)slice).name isEqualToString:@"QuickHelpInspectorMain"]) {
+            if ([[slice name] isEqualToString:@"QuickHelpInspectorMain"]) {
                 
                 // Create the container
                 sharedPlugin.containerView = [[NSTaggableView alloc] initWithFrame:CGRectMake(0, 0, orig.frame.size.width, 400)];
@@ -281,7 +273,9 @@ static ZMDocItemInspector *sharedPlugin;
 
 
 - (void)itemViewDidReceiveClick:(ZMDocItemView *)itemView {
-    [self jumpToLandmarkItemInTheEditor:self.currentDocItems[itemView.customTag]];
+    if (self.currentDocItems.count > itemView.customTag) {
+        [self jumpToLandmarkItemInTheEditor:self.currentDocItems[itemView.customTag]];
+    }
 }
 
 

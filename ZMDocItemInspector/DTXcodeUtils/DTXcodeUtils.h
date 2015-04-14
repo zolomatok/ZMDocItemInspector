@@ -1,11 +1,10 @@
-#import <AppKit/AppKit.h>
-#import "IDESourceCodeDocument.h"
+#import "DTXcodeHeaders.h"
 
 @class DVTSourceTextView;
 @class DVTTextStorage;
 @class IDEEditor;
 @class IDEEditorArea;
-//@class IDESourceCodeDocument;
+@class IDESourceCodeDocument;
 @class IDEEditorContext;
 @class IDEWorkspaceWindowController;
 
