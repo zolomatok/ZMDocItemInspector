@@ -1,4 +1,4 @@
-# ZMDocItemInspector
+# XCDocItemInspector
 
 ## What is this?
 This Xcode plugin converts the Quick Help inspector into an always visible Document Items inspector.
