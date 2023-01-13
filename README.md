@@ -1,6 +1,6 @@
 # ZMDocItemInspector
 
-## Important!
+## Important‼️
 This was developed for **Xcode 6**. No idea if it's still working or not. It's mostly just here for posterity and as a code sample for plugin development. It does **not** use the modern Xcode extension API.
 
 
