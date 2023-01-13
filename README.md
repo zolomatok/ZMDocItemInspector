@@ -1,5 +1,9 @@
 # ZMDocItemInspector
 
+## Important!
+This was developed for **Xcode 6**. No idea if it's still working or not. It's mostly just here for posterity and as a code sample for plugin development. It does **not** use the modern Xcode extension API.
+
+
 ## What is this?
 This Xcode plugin converts the Quick Help inspector into an always visible Document Items inspector.
 Makes it easier to find our way around the code.
